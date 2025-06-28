@@ -10,11 +10,11 @@ namespace _02_Operadores
 			//      Un operador es un símbolo que le dice al compilador que realice una operación matemática o lógica.
 
 			// Operadores Aritméticos
-			//      +: Suma dos operandos.
-			//      -: Resta dos operandos.
-			//      *: Multiplica dos operandos.
-			//      /: Divide dos operandos.
-			//      %: Devuelve el residuo de una división.
+			//      +	: Suma dos operandos.
+			//      -	: Resta dos operandos.
+			//      *	: Multiplica dos operandos.
+			//      /	: Divide dos operandos.
+			//      %	: Devuelve el residuo de una división.
 
 			int numero1 = 10;
 			int numero2 = 20;
