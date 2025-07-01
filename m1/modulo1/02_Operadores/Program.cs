@@ -37,7 +37,8 @@ namespace _02_Operadores
 			string saludo = "Hola" + " Mundo";
 			Console.WriteLine(saludo);
 
-			// Operaciones relacionales:
+			// Operadores relacionales:
+			// Los Operadores relacionales se utilizan para comparar dos valores y devolver un valor booleano (verdadero o falso).
 			//      ==	: Igual a
 			//      !=	: Diferente de
 			//      >	: Mayor que
@@ -55,22 +56,85 @@ namespace _02_Operadores
 			Console.WriteLine($"Mayor o igual que (>=) : {numero1} >= {numero2} = {numero1 >= numero2}");
 			Console.WriteLine($"Menor o igual que (<=) : {numero1} <= {numero2} = {numero1 <= numero2}");
 
-			// Operaciones lógicas:
+			// Operadores lógicos:
+			// Los Operadores lógicas se utilizan para combinar o invertir condiciones booleanas.
+			//      !	: Negación lógica
 			//      &&	: Y lógico
 			//      ||	: O lógico
 
+			bool esCondicionVerdadera = false;
+			bool esCondicionFalsa = false;
 
-			// Operaciones de asignación:
-			//      =	: Asignación
+			Console.WriteLine($"\n=== OPERACIONES LÓGICAS ===");
+
+			// !	: Negación lógica
+			bool resultadoNegacion = !esCondicionVerdadera;
+			Console.WriteLine($"Negación lógica (!): !{esCondicionVerdadera} = {resultadoNegacion}");
+
+			// &&	: Y lógico | AND lógico
+			//		Evaluará a verdadero solo si ambas condiciones son verdaderas.
+			//		Si una de las condiciones es falsa, el resultado será falso.
+			bool resultadoAnd = esCondicionVerdadera && esCondicionFalsa;
+			Console.WriteLine($"Resultado AND: {resultadoAnd}");
+
+			// ||	: O lógico | OR lógico
+			//      Si alguna de las condiciones es verdadera, el resultado es verdadero.
+			bool resultadoOr = esCondicionVerdadera || esCondicionFalsa;
+			Console.WriteLine($"Resultado OR: {resultadoOr}");
+
+
+			// Operadores de asignación:
+			//      =	: Asignación simple
 			//      +=	: Asignación con suma
 			//      -=	: Asignación con resta
 			//      *=	: Asignación con multiplicación
 			//      /=	: Asignación con división
 			//      %=	: Asignación con módulo
 
-			// Operaciones de incremento y decremento:
+			Console.WriteLine($"\n=== OPERADORES DE ASIGNACION ===");
+
+			int numeroC = 5;
+			
+			numeroC += 3;   
+			Console.WriteLine($"Valor de numeroC después de += 3: {numeroC}");
+
+			numeroC -= 2;
+			Console.WriteLine($"Valor de numeroC después de -= 2: {numeroC}");
+
+			numeroC *= 2;
+			Console.WriteLine($"Valor de numeroC después de *= 2: {numeroC}");
+
+			numeroC /= 4;
+			Console.WriteLine($"Valor de numeroC después de /= 4: {numeroC}");
+
+			numeroC %= 3;
+			Console.WriteLine($"Valor de numeroC después de %= 3: {numeroC}");
+
+			// Operadores de incremento y decremento:
+			// Los Operadores de incremento y decremento se utilizan para aumentar o disminuir el valor de una variable en 1.  
 			//      ++	: Incremento
 			//      --	: Decremento
+
+			Console.WriteLine($"\n=== OPERADORES DE INCREMENTO Y DECREMENTO ===");
+			int numeroD = 5;
+			Console.WriteLine($"Valor de numeroD antes del incremento: {numeroD}");
+			numeroD++;
+			Console.WriteLine($"Valor de numeroD después del incremento: {numeroD}");
+			numeroD--;
+			Console.WriteLine($"Valor de numeroD después del decremento: {numeroD}");
+
+			// Operador condicional ternario:
+			//      El operador condicional ternario es una forma abreviada de escribir una estructura if-else.
+			//      Sintaxis:   
+			//      condición ? expresión1 : expresión2
+
+			int edad = 17;
+			string mensaje = (edad >= 18) ? "Es mayor de edad" : "Es menor de edad";
+			Console.WriteLine($"\n=== OPERADOR CONDICIONAL TERNARIO ===");
+			Console.WriteLine($"Edad: {edad}");
+			Console.WriteLine($"Mensaje: {mensaje}");
 		}
+
+
 	}
 }
