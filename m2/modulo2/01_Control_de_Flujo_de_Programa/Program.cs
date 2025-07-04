@@ -218,9 +218,15 @@
                 numeroActual++;
             }
 
-            // Ejemplo: Uso de break en un bucle while
-            // 'break' termina el bucle inmediatamente.
-            int numeroConBreak = 1;
+			#region Break y Continue
+			// Los operadores break y continue se utilizan para controlar el flujo de ejecución dentro de los bucles.
+			// Operador Break: se utiliza para salir de un bucle antes de que se complete su iteración normal.
+			// Operador Continue: se utiliza para saltar a la siguiente iteración de un bucle.
+			#endregion
+
+			// Ejemplo: Uso de break en un bucle while
+			// 'break' termina el bucle inmediatamente.
+			int numeroConBreak = 1;
             while (true)
             {
                 Console.WriteLine(numeroConBreak);
