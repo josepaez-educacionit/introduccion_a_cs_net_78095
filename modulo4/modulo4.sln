@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Arreglos_Multidimensionales", "01_Arreglos_Multidimensionales\01_Arreglos_Multidimensionales.csproj", "{F554114C-BAFA-443B-ADA2-DB1EC3A2373B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Funciones_y_Procedimientos", "02_Funciones_y_Procedimientos\02_Funciones_y_Procedimientos.csproj", "{9E08350D-485A-440D-A88E-C11C9C28A1D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F554114C-BAFA-443B-ADA2-DB1EC3A2373B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F554114C-BAFA-443B-ADA2-DB1EC3A2373B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F554114C-BAFA-443B-ADA2-DB1EC3A2373B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F554114C-BAFA-443B-ADA2-DB1EC3A2373B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E08350D-485A-440D-A88E-C11C9C28A1D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E08350D-485A-440D-A88E-C11C9C28A1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E08350D-485A-440D-A88E-C11C9C28A1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E08350D-485A-440D-A88E-C11C9C28A1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44F20288-ACFE-4F77-8532-1BE51ED462CE}
+	EndGlobalSection
+EndGlobal

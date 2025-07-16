@@ -86,6 +86,7 @@
 				total += numerosParaPromedio[i];
 			}
 
+			// Alternativa usando foreach
 			//foreach( var numero in numerosParaPromedio )
 			//{
 			//	total += numero;
