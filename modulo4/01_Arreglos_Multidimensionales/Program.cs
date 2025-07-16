@@ -2,62 +2,79 @@
 {
 	internal class Program
 	{
-
-		// Arreglos Multidimensionales
-		// Un arreglo multidimensional es una colección de datos organizados en filas y columnas.
-		// Se pueden considerar como una tabla o matriz.
-		// Un arreglo multidimensional se declara especificando el número de dimensiones y el tamaño de cada dimensión.
+		// =============================
+		// ARREGLOS MULTIDIMENSIONALES
+		// =============================
+		// Un arreglo multidimensional es una estructura que almacena datos en más de una dimensión (filas y columnas).
+		// Ejemplo clásico: una matriz (tabla de números).
+		// En C#, se declara usando int[,], donde cada coma representa una dimensión.
 
 		static void Main(string[] args)
 		{
-			// Declaración de un arreglo multidimensional
+			// =============================
+			// DECLARACIÓN DE ARREGLO MULTIDIMENSIONAL
+			// =============================
+			// Se crea una matriz de 3x3 (3 filas, 3 columnas), inicializada con ceros por defecto.
 			int[,] matriz = new int[3, 3];
 
-			// Escritura y lectura de un dato
-			matriz[0, 0] = 1;
-			matriz[1, 0] = 2;
-			matriz[2, 0] = 3;
+			// =============================
+			// ASIGNACIÓN DE VALORES
+			// =============================
+			// Se asignan valores a la primera columna de cada fila.
+			matriz[0, 0] = 1; // Fila 0, Columna 0
+			matriz[1, 0] = 2; // Fila 1, Columna 0
+			matriz[2, 0] = 3; // Fila 2, Columna 0
 
-			// Lectura de valores de la matriz
-			int dato1 = matriz[0, 0];
-			int dato2 = matriz[1, 0];
-			int dato3 = matriz[2, 0];
+			// =============================
+			// LECTURA DE VALORES
+			// =============================
+			// Se leen los valores asignados anteriormente.
+			int dato1 = matriz[0, 0]; // 1
+			int dato2 = matriz[1, 0]; // 2
+			int dato3 = matriz[2, 0]; // 3
 
-			// Declaración e inicialización
-			// Se puede declarar e inicializar un arreglo multidimensional en una sola línea
+			// =============================
+			// DECLARACIÓN E INICIALIZACIÓN
+			// =============================
+			// Se puede declarar e inicializar una matriz en una sola línea.
 			int[,] matriz2 = new int[3, 3]
 			{
-				{ 1, 2, 3 },
-				{ 4, 546, 6 },
-				{ 7, 8, 9 }
+				{ 1, 2, 3 },   // Fila 0
+				{ 4, 546, 6 }, // Fila 1
+				{ 7, 8, 9 }    // Fila 2
 			};
+			// Cada sub-arreglo representa una fila de la matriz.
 			
-			// Impresión del arreglo completo 
+			// =============================
+			// IMPRESIÓN DE LA MATRIZ COMPLETA
+			// =============================
 			Console.WriteLine("Contenido de la matriz:");
-			for (int i = 0; i < matriz2.GetLength(0); i++)
+			// Recorre todas las filas y columnas usando dos bucles anidados
+			for (int i = 0; i < matriz2.GetLength(0); i++) // Recorre filas
 			{
-				for (int j = 0; j < matriz2.GetLength(1); j++)
+				for (int j = 0; j < matriz2.GetLength(1); j++) // Recorre columnas
 				{
-					Console.Write(matriz2[i, j] + " ");
+					Console.Write(matriz2[i, j] + " "); // Imprime cada elemento
 				}
-				Console.WriteLine();
+				Console.WriteLine(); // Salto de línea al terminar cada fila
 			}
 
-
-			// Encontrar el mayor valor en un arreglo
-			// Se recorre el arreglo para encontrar el mayor valor
-			int mayor = matriz2[0, 0];
+			// =============================
+			// BÚSQUEDA DEL MAYOR VALOR
+			// =============================
+			// Se recorre toda la matriz para encontrar el valor máximo.
+			int mayor = matriz2[0, 0]; // Se parte del primer elemento
 			for (int i = 0; i < matriz2.GetLength(0); i++)
 			{
 				for (int j = 0; j < matriz2.GetLength(1); j++)
 				{
 					if (matriz2[i, j] > mayor)
 					{
-						mayor = matriz2[i, j];
+						mayor = matriz2[i, j]; // Se actualiza si se encuentra uno mayor
 					}
 				}
 			}
-			Console.WriteLine("El mayor valor es: " + mayor);
+			Console.WriteLine("El mayor valor es: " + mayor); // Muestra el resultado
 		}
 	}
 }
