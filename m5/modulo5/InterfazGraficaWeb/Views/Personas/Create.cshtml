@@ -1,0 +1,36 @@
+@model InterfazGraficaWeb.Models.Persona
+
+@{
+    ViewData["Title"] = "Crear Persona";
+}
+
+<h1>Crear Persona</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Apellido"></label>
+        <input asp-for="Apellido" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FechaNacimiento"></label>
+        <input asp-for="FechaNacimiento" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label asp-for="NumeroDocumento"></label>
+        <input asp-for="NumeroDocumento" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Domicilio"></label>
+        <input asp-for="Domicilio" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Telefono"></label>
+        <input asp-for="Telefono" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</form>

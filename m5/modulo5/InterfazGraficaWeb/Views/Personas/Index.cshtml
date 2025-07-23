@@ -1,0 +1,41 @@
+@model IEnumerable<InterfazGraficaWeb.Models.Persona>
+
+@{
+    ViewData["Title"] = "Personas";
+}
+
+<h1>Personas</h1>
+<p>
+    <a asp-action="Create">Crear nueva persona</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Fecha Nacimiento</th>
+            <th>Documento</th>
+            <th>Domicilio</th>
+            <th>Teléfono</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@item.Nombre</td>
+        <td>@item.Apellido</td>
+        <td>@item.FechaNacimiento.ToShortDateString()</td>
+        <td>@item.NumeroDocumento</td>
+        <td>@item.Domicilio</td>
+        <td>@item.Telefono</td>
+        <td>
+            <a asp-action="Details" asp-route-id="@item.PersonaId">Ver</a> |
+            <a asp-action="Edit" asp-route-id="@item.PersonaId">Editar</a> |
+            <a asp-action="Delete" asp-route-id="@item.PersonaId">Eliminar</a>
+        </td>
+    </tr>
+}
+    </tbody>
+</table>
