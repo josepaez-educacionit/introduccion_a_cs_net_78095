@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="container-fluid">
+    <div class="jumbotron bg-primary text-white rounded p-5 mb-4">
+        <h1 class="display-4">
+            <i class="fas fa-home"></i> Bienvenido a DemoWeb
+        </h1>
+        <p class="lead">Sistema de Gestión de Clientes - Tu plataforma completa para administrar información de clientes</p>
+        <hr class="my-4 bg-white">
+        <p>Gestiona eficientemente la información de tus clientes con nuestra interfaz intuitiva y moderna.</p>
+        <a class="btn btn-light btn-lg" asp-controller="ClientesWeb" asp-action="Index" role="button">
+            <i class="fas fa-users"></i> Acceder a Clientes
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 border-primary">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-users"></i> Gestión de Clientes
+                    </h5>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Administra toda la información de tus clientes de manera centralizada y eficiente.</p>
+                    <div class="mt-auto">
+                        <a asp-controller="ClientesWeb" asp-action="Index" class="btn btn-primary">
+                            <i class="fas fa-list"></i> Ver Clientes
+                        </a>
+                        <a asp-controller="ClientesWeb" asp-action="Create" class="btn btn-outline-primary">
+                            <i class="fas fa-plus"></i> Nuevo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 border-success">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-code"></i> API REST
+                    </h5>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Accede a la documentación completa de nuestra API REST para integraciones.</p>
+                    <div class="mt-auto">
+                        <a href="/swagger" target="_blank" class="btn btn-success">
+                            <i class="fas fa-book"></i> Ver API Docs
+                        </a>
+                        <a href="/api/clientes" target="_blank" class="btn btn-outline-success">
+                            <i class="fas fa-database"></i> Datos JSON
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100 border-info">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-info-circle"></i> Información
+                    </h5>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <p class="card-text">Conoce más sobre las características y funcionalidades del sistema.</p>
+                    <div class="mt-auto">
+                        <a asp-controller="Home" asp-action="Privacy" class="btn btn-info">
+                            <i class="fas fa-shield-alt"></i> Privacidad
+                        </a>
+                        <a href="https://learn.microsoft.com/aspnet/core" target="_blank" class="btn btn-outline-info">
+                            <i class="fas fa-external-link-alt"></i> ASP.NET Core
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0">
+                        <i class="fas fa-chart-line"></i> Estadísticas Rápidas
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <div class="border-end
